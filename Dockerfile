@@ -1,6 +1,6 @@
 FROM caddy:builder AS builder
 
-RUN xcaddy build --with github.com/caddy-dns/cloudflare@latest --with github.com/mholt/caddy-ratelimit@latest
+RUN xcaddy build --with github.com/caddy-dns/cloudflare@latest
 
 FROM caddy:latest
 
